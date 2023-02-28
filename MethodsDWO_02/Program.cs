@@ -80,6 +80,7 @@
 
                 return false;
 
+
             default:
                 return true;
 
@@ -90,13 +91,21 @@
 
     private static bool Login()
     {
+        // Not : her şifre karakteri girdiğinde şifre bölümünde ***** gibi gözüksün.
+
         string userID = "", userPass = "";
 
         Console.Clear();
 
         Console.WriteLine("----- Login -----");
+        Console.WriteLine("Anamenüye dönüş için * 'ı tuşlayınız...\n\n");
         Console.WriteLine("Kullanıcı adınızı giriniz :");
         userID = Console.ReadLine().Trim();
+
+        if (userID == "*")
+        {
+            return false;
+        }
 
         Console.WriteLine("Şifrenizi giriniz :");
         userPass = Console.ReadLine();
@@ -118,13 +127,20 @@
 
             indexLog++;
 
+            for (int i = 0; i < indexLog; i++)
+            {
 
-
+                Console.WriteLine("Log kayıdı : " + datLog[i]);
+            }
         }
         else
         {
             Console.WriteLine("Maalesef kullanıcı yok...\n");
+
+
         }
+
+
         
         Console.ReadKey();
 

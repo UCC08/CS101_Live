@@ -19,9 +19,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07_ErrorControls", "07_Erro
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08_Methods", "08_Methods\08_Methods.csproj", "{D6D46A05-485B-4233-AA37-B50BDABCF1AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodsDWO_01", "MethodsDWO_01\MethodsDWO_01.csproj", "{41F74810-3F5B-4A38-965A-00FE20E8FD81}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MethodsDWO_01", "MethodsDWO_01\MethodsDWO_01.csproj", "{41F74810-3F5B-4A38-965A-00FE20E8FD81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodsDWO_02", "MethodsDWO_02\MethodsDWO_02.csproj", "{76004688-9C0B-4772-A922-EB7535800F50}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MethodsDWO_02", "MethodsDWO_02\MethodsDWO_02.csproj", "{76004688-9C0B-4772-A922-EB7535800F50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09_Classes", "09_Classes\09_Classes.csproj", "{2D52280F-DE20-4E2D-99AB-C21DC9EEBAC0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -70,6 +72,10 @@ Global
 		{76004688-9C0B-4772-A922-EB7535800F50}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76004688-9C0B-4772-A922-EB7535800F50}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76004688-9C0B-4772-A922-EB7535800F50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D52280F-DE20-4E2D-99AB-C21DC9EEBAC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D52280F-DE20-4E2D-99AB-C21DC9EEBAC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D52280F-DE20-4E2D-99AB-C21DC9EEBAC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D52280F-DE20-4E2D-99AB-C21DC9EEBAC0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -110,6 +110,7 @@ namespace _14_Encapsulation
                 else
                 {
                     _Amount1 = value;
+
                 }
             }
 

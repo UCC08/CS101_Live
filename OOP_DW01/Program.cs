@@ -2,6 +2,7 @@
 {
     private static void Main(string[] args)
     {
+
         // 1. Human adlı bir sınıf oluşturarak adınızı,iş tanımınızı,doğum tarihinizi oluşturunuz..İster ekrandan alarak ister hard coded olacak şekilde...
         // tarihsel işlemler için C#'ın DateTime fonksiyonundan/metodundan yaralanabilirsiniz..
 

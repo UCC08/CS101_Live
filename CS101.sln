@@ -33,7 +33,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "12_Polymorrphism", "12_Poly
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "13_Constructor", "13_Constructor\13_Constructor.csproj", "{9125C83E-8804-45CE-9B03-705FB9A1D860}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14_Encapsulation", "14_Encapsulation\14_Encapsulation.csproj", "{878DC490-7216-4BD8-8758-4008338320B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "14_Encapsulation", "14_Encapsulation\14_Encapsulation.csproj", "{878DC490-7216-4BD8-8758-4008338320B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_DW01", "OOP_DW01\OOP_DW01.csproj", "{2813A2C9-114C-47F1-8B51-AC5AA85F1CEE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -106,6 +108,10 @@ Global
 		{878DC490-7216-4BD8-8758-4008338320B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{878DC490-7216-4BD8-8758-4008338320B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{878DC490-7216-4BD8-8758-4008338320B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2813A2C9-114C-47F1-8B51-AC5AA85F1CEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2813A2C9-114C-47F1-8B51-AC5AA85F1CEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2813A2C9-114C-47F1-8B51-AC5AA85F1CEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2813A2C9-114C-47F1-8B51-AC5AA85F1CEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

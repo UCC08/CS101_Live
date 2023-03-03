@@ -95,9 +95,7 @@ internal class Program
         clsCopy obj2 = new clsCopy(obj1);
         obj2.Display();
 
-
-
-        #endregion
+         #endregion
 
         Console.ReadKey();
     }

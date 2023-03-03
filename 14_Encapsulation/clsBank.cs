@@ -31,40 +31,95 @@ namespace _14_Encapsulation
 
 
         #region getter/setter
-        private double balance; // yani burada dışarıya kapalı bir değişgen tanımı var
+        //private double balance; // yani burada dışarıya kapalı bir değişgen tanımı var
 
-        // set (setter) / get (getter) metotlarının tanımlanması
+        //// set (setter) / get (getter) metotlarının tanımlanması
 
 
-        // Public getter metod
-        // bu metot balance değişgeninizde tutulan değeri almak için
-        public double GetBalanceCaps()
+        //// Public getter metod
+        //// bu metot balance değişgeninizde tutulan değeri almak için
+        //public double GetBalanceCaps()
+        //{
+        //    // burada farklı işlemler var...
+
+        //    return balance;
+        //}
+
+        //// Public setter method
+        //// bu metot balance değişgeninizde tutulan değeri set/değiştirmek/güncelleöek için
+        //public void SetBalanceCaps(double balance) // geriye değer döndürmeyen metot
+        //{
+        //    // burada farklı işlemler var...
+
+        //    this.balance = balance; // sen benim kendi değişgenimi güncelleyceksin(this)
+
+        //}
+
+        #endregion
+
+        #region Eğer sınıfı tasarlarken Kapsülleme(encapsulation) prensibine uymazsak ne olur?
+
+        public int Amount;
+
+        //Daha sonra, gelecekte, müşteri uygulamanın negatif bir değere izin vermemesini istiyor.Ardından, miktar değişkeninde
+        //saklamadan önce kullanıcı tarafından verilen değerleri doğrulamalıyız.Bu nedenle, kapsülleme ilkesini aşağıdaki
+        //gibi izleyerek uygulamayı geliştirmemiz gerekir:
+
+        public int GetAmount() // get metodu
         {
-            // burada farklı işlemler var...
-
-            return balance;
+            return Amount;
         }
 
-        // Public setter method
-        // bu metot balance değişgeninizde tutulan değeri set/değiştirmek/güncelleöek için
-        public void SetBalanceCaps(double balance) // geriye değer döndürmeyen metot
+        public void SetAmount(int Amount) //set metodu
         {
-            // burada farklı işlemler var...
-
-            this.balance = balance; // sen benim kendi değişgenimi güncelleyceksin(this)
+            if (Amount > 0)
+            {
+                this.Amount=Amount;
+            }
+            else
+            {
+                throw new Exception("Lütfen pozitif bir sayı girin...");
+            }
 
         }
-
-
-
-
-
-
-
 
 
 
         #endregion
 
+
+        #region Properties/değişgenlere de uygulanabilir...
+        // Özellikler C#'da tanıtılan yeni bir dil özelliğidir. C# 'daki özellikler, değerleri okuyarak ve yazarak bir sınıfın
+        // bir alanının veya değişkeninin korunmasına yardımcı olur. İlk yaklaşım, yani ayarlayıcı ve alıcının kendisi iyidir,
+        // ancak C# 'daki veri kapsülleme özelliklerle çok daha pürüzsüz olarak gerçekleştirilebilir.
+
+        private int _Amount1;
+
+        public int Amount1
+        {
+            get
+            {
+                return _Amount1;
+            }
+            set
+            {
+                if (value <0)
+                {
+                    throw new Exception("Lütfen pozitif nir değer giriniz....");
+                }
+                else
+                {
+                    _Amount1 = value;
+                }
+            }
+
+        }
+
+
+        public int _Amount { get; set; }
+
+
+
+        #endregion
     }
 }

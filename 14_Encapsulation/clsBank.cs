@@ -59,29 +59,29 @@ namespace _14_Encapsulation
 
         #region Eğer sınıfı tasarlarken Kapsülleme(encapsulation) prensibine uymazsak ne olur?
 
-        public int Amount;
+        //public int Amount;
 
         //Daha sonra, gelecekte, müşteri uygulamanın negatif bir değere izin vermemesini istiyor.Ardından, miktar değişkeninde
         //saklamadan önce kullanıcı tarafından verilen değerleri doğrulamalıyız.Bu nedenle, kapsülleme ilkesini aşağıdaki
         //gibi izleyerek uygulamayı geliştirmemiz gerekir:
 
-        public int GetAmount() // get metodu
-        {
-            return Amount;
-        }
+        //public int GetAmount() // get metodu
+        //{
+        //    return Amount;
+        //}
 
-        public void SetAmount(int Amount) //set metodu
-        {
-            if (Amount > 0)
-            {
-                this.Amount=Amount;
-            }
-            else
-            {
-                throw new Exception("Lütfen pozitif bir sayı girin...");
-            }
+        //public void SetAmount(int Amount) //set metodu
+        //{
+        //    if (Amount > 0)
+        //    {
+        //        this.Amount=Amount;
+        //    }
+        //    else
+        //    {
+        //        throw new Exception("Lütfen pozitif bir sayı girin...");
+        //    }
 
-        }
+        //}
 
 
 
@@ -103,7 +103,7 @@ namespace _14_Encapsulation
             }
             set
             {
-                if (value <0)
+                if (value < 0)
                 {
                     throw new Exception("Lütfen pozitif nir değer giriniz....");
                 }
@@ -116,7 +116,7 @@ namespace _14_Encapsulation
         }
 
 
-        public int _Amount { get; set; }
+        public int _Amount2 { get; set; } // en sade - kontrolsuz felan kullanım
 
 
 

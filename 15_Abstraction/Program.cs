@@ -1,4 +1,6 @@
-﻿internal class Program
+﻿using _15_Abstraction;
+
+internal class Program
 {
     // Basit bir örnek üzerinde işleyecek olursak; bir işletmemiz ve bu işletmeye bağlı çalışanlarımızın
     // bilgilerinin yer alacağı, çeşitli işlemlere imkan verecek bir sınıfımız ve bu sınıfa özelliklerin atanmasını
@@ -17,6 +19,27 @@
 
     private static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        // Öncelikle bir Beden İşçisi oluşturalım
+
+        clsCreateEmployeeManager bodyworker= new clsCreateEmployeeManager(); // nesneyi yarattım.
+
+        bodyworker.employeeBaseManager= new clsEmployeeManager();
+
+        bodyworker.Create();
+
+        bodyworker.getInfo();
+
+
+        // bir mühendis için
+
+        clsCreateEmployeeManager engineer= new clsCreateEmployeeManager();
+
+        engineer.employeeBaseManager = new clsEngineerManager(); // Mühendisler için
+
+        engineer.Create();
+
+        engineer.getInfo();
+
+
     }
 }

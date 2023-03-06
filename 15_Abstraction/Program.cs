@@ -6,7 +6,7 @@
     // Bu örnek için uygulanacak aşamalar;
 
     // 1. Çalışan bilgilerinin tutulacağı base konumunda bir abstract class oluşturmak gerektiğinden dolayı
-    // clsEmployeeBaseManager isminde bir abstract sınıf oluşturalım.
+    // clsEmployeeBaseManager isminde bir abstract sınıf oluşturalım. ok
     //
     // 2. Çalışanların bilgilerinin saklanacağı çeşitli değişkenler ve bu bilgilere göre çeşitli işlemler
     // yapılmasının sağlanacağı bazı metot tanımlamaları gerçekleştirelim.

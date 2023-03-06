@@ -23,24 +23,42 @@ namespace _16_Interfaces
             Console.WriteLine("-> Oracle DB bağlantısı başarılı şekilde sonlandırıldı...\n");
         }
 
-        public void deletevalue(string value)
+
+
+        public void deletevalue()
         {
-            this.value
+            this.value = null;
+
+            Console.WriteLine("-> Veritabanı üzerindeki bilgiler silindi...\n");
         }
 
         public void getValue()
         {
-            throw new NotImplementedException();
+            if (value!= null)
+            {
+                Console.WriteLine($"-> İstediğiniz doğrultuda [{value}] verisi başarılı bir şekilde getirildi...\n");
+
+            }
+            else
+                Console.WriteLine($"-> Veritabanı içinde herhangi bir değer yoktur...Daha sonra tekrar deneyiniz...\n");
+
         }
 
         public int login(string userName, string password)
         {
-            throw new NotImplementedException();
+            if (userName == this.userName && password == this.password)
+            {
+                return 1; // return true;
+            }
+            else
+                return 0; // return false
         }
 
         public void updatevalue(string value)
         {
-            throw new NotImplementedException();
+            this.value = value;
+
+            Console.WriteLine("-> Veritabanı üzerindeki bilgiler güncellendi...\n");
         }
     }
 }

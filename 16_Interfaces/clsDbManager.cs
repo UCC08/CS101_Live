@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -33,9 +34,72 @@ namespace _16_Interfaces
             password = Console.ReadLine();
 
 
-            if (true)
+            if (database.login(userName,password) == 1)
             {
+                menu();
 
+            }
+            else
+                Console.WriteLine("Bağlantı bilgilerinde bir terslik var...Kontrol rdiniz...\n");
+        }
+
+        public void closeDB() 
+        { 
+            database.close();
+        }
+
+        private void addValue(string value) 
+        { 
+            database.addvalue(value);
+        
+        }
+
+        private void deleteValue() 
+        {
+            database.deletevalue();
+        
+        
+        }
+
+        private void getValue() 
+        {
+            database.getValue();
+        
+        
+        }
+
+        private void menu()
+        {
+            string value;
+            int v;
+            Console.WriteLine("< Veri Tabanı İşlemleri >\n");
+            Console.WriteLine("[1] - Veri Ekle\n[2] - Veri Sil\n[3] - Veri Getir\n[4] - Bağlantıyı Kes\n");
+            Console.Write("-> Yapmak istediğiniz işlem: ");
+
+            v = Convert.ToInt32(Console.ReadLine());
+            switch (v)
+            {
+                case 1:
+                    Console.Write("{0}\n-> Eklemek istediğiniz veri: ");
+                    value = Console.ReadLine();
+
+                    addValue(value);
+                    Console.Clear();
+                    menu();
+                    break;
+                case 2:
+                    Console.Clear();
+                    deleteValue();
+                    menu();
+                    break;
+                case 3:
+                    Console.Clear();
+                    getValue();
+                    menu();
+                    break;
+                case 4:
+                    closeDB();
+                    break;
             }
         }
 

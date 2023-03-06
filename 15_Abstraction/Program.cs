@@ -23,7 +23,7 @@ internal class Program
 
         clsCreateEmployeeManager bodyworker= new clsCreateEmployeeManager(); // nesneyi yarattım.
 
-        bodyworker.employeeBaseManager= new clsEmployeeManager();
+        //bodyworker.employeeBaseManager= new clsEmployeeManager();
 
         bodyworker.Create();
 
@@ -41,5 +41,11 @@ internal class Program
         engineer.getInfo();
 
 
+
+
+
+
+
+        Console.ReadKey();
     }
 }
